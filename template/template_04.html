@@ -1,0 +1,28 @@
+<div style="width:240px;height:330px;border:1px solid #dddddd;padding:10px;float:left;margin:10px">
+    <h1 style="font-size:16px;font-weight:bold;color:#333">{{format(date)}}</h1>
+    <h2 style="font-size:14px;color:#333;">{{title}}</h2>
+    <div style="background-color:#f8f6ed;overflow:hidden;">
+        <div style="float:left;width:45%;">
+            <div style="padding-left:30px;border-right:1px solid #ece4cd;">
+                <h3 style="color:#d8000f">{{rate}}%</h3>
+                <h4>年化收益</h4>
+            </div>
+        </div>
+
+        <div style="float:left;width:45%;">
+            <div style="padding-left:30px">
+                <h3 style="color:#d8000f">{{month}}个月</h3>
+                <h4>借款周期</h4>
+            </div>
+        </div>
+    </div>
+    <ul style="padding-left:0px;color:#716147;font-size:12px;">
+        <li style="list-style:none;padding:5px 0;">借款金额:{{amount}}元</li>
+        <li style="list-style:none;padding:5px 0;">还款方式:{{payMethod}}</li>
+        <li style="list-style:none;padding:5px 0;">担保方式:{{guaranteeMethod}}</li>
+        <li style="list-style:none;padding:5px 0;">审贷意见:{{comment}}</li>
+    </ul>
+    <div>
+        <button style="width:200px;border-radius:18px;background:#d8000f;border:none;color:white;display:block;margin:0 auto;font-size:18px;">投标</button>
+    </div>
+</div>

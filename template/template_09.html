@@ -1,0 +1,31 @@
+
+<label>
+  Enter your name:
+  <input value='{{name}}'>
+</label>
+
+<p>Hello, {{name}}!</p>
+
+<label>
+  <input type='checkbox' checked='{{checked}}'>
+  {{#if checked}}
+  checked!
+  {{else}}
+  not checked
+  {{/if}}
+</label>
+
+<fieldset style="border:none;padding-left:0;">
+  <label><input type='radio' name='{{color}}' value='red' checked> red</label>
+  <label><input type='radio' name='{{color}}' value='green'> green</label>
+  <label><input type='radio' name='{{color}}' value='blue'> blue</label>
+  <p>The selected colour is <span style='color: {{color}};'>{{color}}</span>.</p>
+</fieldset>
+
+<select value='{{selectColor}}'>
+  {{#each colors}}
+    <option>{{this}}</option>
+  {{/each}}
+</select>
+
+<p>The selected colour is <span style='color: {{selectColor}};'>{{selectColor}}</span>.</p>

@@ -1,0 +1,23 @@
+<div style="width:240px;height:330px;border:1px solid #dddddd;padding:10px;float:left;margin:10px">
+    {{#if activate}}
+    <div style="margin:20px auto;">
+        <button on-click="activate"style="width:200px;border-radius:18px;background:#d8000f;border:none;color:white;display:block;margin:0 auto;font-size:18px;">Activate</button>
+    </div>
+    {{/if}}
+
+    {{#if deactivate}}
+    <div style="margin:20px auto;">
+        <button on-click="deactivate" style="width:200px;border-radius:18px;background:#23b574;border:none;color:white;display:block;margin:0 auto;font-size:18px;">Deactivate</button>
+    </div>
+    {{elseif true}}
+    <div style="margin:20px auto;">
+        <button style="width:200px;border-radius:18px;background:#23b574;border:none;color:white;display:block;margin:0 auto;font-size:18px;">无效按钮，演示用</button>
+    </div>  
+    {{/if}}
+
+    {{#if silence}}
+    <div style="margin:20px auto;">
+        <button on-click="silence" style="width:200px;border-radius:18px;background:#d8000f;border:none;color:white;display:block;margin:0 auto;font-size:18px;">Silence</button>
+    </div>
+    {{/if}}
+</div>
